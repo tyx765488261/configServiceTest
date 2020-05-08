@@ -1,0 +1,15 @@
+server:
+  port: 8892
+
+eureka:
+  #eueka 主机名
+  instance:
+    hostname: localhost
+  client:
+    #提供者和消费者的注册地址
+    service-url:
+      defaultZone: http://localhost:5060/eurekaServer/eureka/
+
+spring:
+  application:
+    name: demo-cosumer
